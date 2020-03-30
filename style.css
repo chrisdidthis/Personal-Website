@@ -10,27 +10,27 @@
 
 
 body {
-    background-color: rgba(0, 0, 0, 0.904);
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: var(--bg-image);
+  background-color: rgba(0, 0, 0, 0.904);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: var(--bg-image);
 }
 
 
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 
 }
 
 
 .insta {
-    height: 2em;
-    width: 2em;
+  height: 2em;
+  width: 2em;
 }
 
 .navbar {
@@ -100,13 +100,18 @@ p {
 
 
 
+.colorlay {
+  background-color: var(--hover-color);
+}
+
+
+
 
 .albums {
   position: relative;
-  width: 50%;
-  /*flex-basis: 278px; */
-  flex: 0 32%;
+  flex: 0 32%; 
 }
+
 
 
 .albumimg {
@@ -122,29 +127,35 @@ p {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  /*top: 50%;*/
-  bottom: 14px;
+  bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-    
-  }
+}
 
-  .albums:hover .albumimg {
-  opacity: 0.2;
-    
-  }
+
+.albums:hover .albumimg {
+  opacity: 0.2;    
+}
   
-  .albums:hover .albumtext {
-  opacity: 1;
-    
-  }
+.albums:hover .albumtext {
+  opacity: 1;    
+}
 
 
 .intext {
   color: black;
   font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+i {
+  height: 278px;
+  width: 278px;
+  position: relative;
+  flex: 0 32%; 
 }
 
 
@@ -160,6 +171,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap; 
   justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 
