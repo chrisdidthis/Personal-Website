@@ -127,8 +127,11 @@ p {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
-
+/*.albums a {
+  background-color: red;
+  display: block;
+}
+ */
 .albums:hover .albumimg {
   opacity: 0.2;    
 }
@@ -220,6 +223,10 @@ input[type=text], select, textarea {
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input {
+  background-color: var(--main-bg-color);
 }
 
 input[type=comment] {
